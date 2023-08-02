@@ -1,10 +1,14 @@
 ## Overview
-This repository contains a JavaScript script that utilizes Alchemy's SDK to fetch the transaction history of a NFT from an address. For each NFT, the fields below are printed, however, to see all fields refer to the [Alchemy API reference](https://docs.alchemy.com/reference/sdk-getassettransfers):
+This repository contains a JavaScript script that utilizes Alchemy's SDK to fetch the details of all the NFT transactions by an address. For each NFT, the fields below are printed, however, to see all fields refer to the [Alchemy API reference](https://docs.alchemy.com/reference/sdk-getassettransfers):
 
 
-- Token Type
-- Token ID
-- Address
+- the from address of the transfer
+- the to address of the transfer
+- transaction hash of the transfer
+- unique id of transfer
+- block number where transfer occurred
+- token symbol
+- asset transfer value
 
 
 ## Steps to Run
@@ -34,7 +38,7 @@ Follow these steps to run the script:
 7. Run the script in the terminal: `node get_nft_transactions.js`
 
 
-By following these steps, the script will get the transaction history of an NFT, printing out the desired fields to the console.
+By following these steps, the script will get the history of all the NFT transactions by an address, printing out the desired fields to the console.
 
 
 ## Frequently Used Options and Best Practices
